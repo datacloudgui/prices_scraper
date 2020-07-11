@@ -1,0 +1,19 @@
+retail_sites:
+  alkosto:
+    telefonos: https://www.alkosto.com/telefonos-celulares
+    queries:
+      articulo: '.item'       
+    computadores-tablets: https://www.alkosto.com/computadores-y-tablets
+    televisores: https://www.alkosto.com/tv
+    electrodomesticos: https://www.alkosto.com/electro
+    camaras: https://www.alkosto.com/camaras
+    audio: https://www.alkosto.com/audio
+    video-juegos: https://www.alkosto.com/videojuegos
+    accesorios: https://www.alkosto.com/accesorios
+    netflix-otros: https://www.alkosto.com/productos-digitales/pines-virtuales
+    smartwatch: https://www.alkosto.com/relojes-inteligentes
+    deportes: https://www.alkosto.com/gimnasio
+    hogar-muebles: https://www.alkosto.com/hogar/muebles
+  exito:
+    url: https://elpais.com
+
