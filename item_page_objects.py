@@ -26,7 +26,7 @@ class HomePage:
                 link_list.append(article.h2.a['href'])
             except:
                 #Avoiding articles without link tag
-                print('Dont have link, skipped)
+                print('Dont have link, skipped')
                 continue
             try:
                 #HTML tags for product name, price and image source

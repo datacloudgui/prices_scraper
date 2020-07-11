@@ -33,6 +33,11 @@ Four files are disposed:
   2. Category of the product - twelve categories implemented at the moment.
   3. Number of pages to scrap in the selected categories
 
+  ##example: 
+  
+  python3 prices_scraper.py alkosto televisores 3
+  python3 prices_scraper.py alkosto computadores-tablets 6
+
   The code use the Homepage class into a for loop to collect all the data of the selected category and saving on a csv file.
 
   Some logging messages are used to inform the user about the progress telling at the end the total of articles founded.
