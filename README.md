@@ -1,4 +1,3 @@
-# price-watcher-data-cleaner
 # Price scraper for a colombian technology vendor
 
 Python scraper using beautifulsoup
