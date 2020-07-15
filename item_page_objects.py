@@ -1,7 +1,7 @@
 import requests
 import bs4
 import urllib.request
-
+import datetime
 from common import config
 
 
@@ -51,6 +51,7 @@ class HomePage:
         return nodes
 
     def _visit(self, url,category_id,num_page):
+        now = datetime.datetime.now()
         response = requests.get(url)
 
         response.raise_for_status()
@@ -58,7 +59,7 @@ class HomePage:
         #copy of page to store the original HTML text
         response2 = urllib.request.urlopen(url)
         webContent = response2.read()
-        f = open('fuente'+'/'+category_id+'/'+num_page+'.html', 'wb')
+        f = open('fuente'+'/'+category_id+'/'+num_page+now.strftime('%d_%m_')+now.strftime("%y")+'.html', 'wb')
         f.write(webContent)
         f.close
 

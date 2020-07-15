@@ -34,7 +34,7 @@ def _prices_scraper(retail_site, category_id, num_pages):
 def _save_articles_to_csv(category_id,articles_title, articles_price,articles_link, articles_image):
     now = datetime.datetime.now()
     csv_headers = 'categoria','producto',now.strftime('%d_%m_')+now.strftime("%y"),'link','imagen'
-    out_file_name = '{category_id}_{datetime}_articles.csv'.format(category_id=category_id, datetime=now.strftime('%Y_%m_%d'))
+    out_file_name = '{category_id}_{datetime}.csv'.format(category_id=category_id, datetime=now.strftime('%d_%m_')+now.strftime("%y"))
 
     with open(out_file_name, mode='w+') as f:
         writer = csv.writer(f)
